@@ -206,9 +206,9 @@ class flickerBox {
 	updateState(cTime){
 		const isOn = Math.floor(cTime / this.eHT)%2 == 0;
 		if (isOn) {
-			this.squarediv.style.opacity = 1;
-		} else {
 			this.squarediv.style.opacity = 0;
+		} else {
+			this.squarediv.style.opacity = 1;
 		}
 		// Book-keeping on state switches
 		if (isOn !== this.isOn){
